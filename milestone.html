@@ -1,0 +1,142 @@
+<html>
+<head><title>Mile Stone</title>
+<style>
+.nav
+{
+background:darkgreen;
+text-align:center;
+border-radius:0px;
+}
+.nav a
+{
+color:white;
+font-size:26px;
+padding:10px;
+}
+.header
+{
+background:darkgreen;
+color:white;
+padding:2rem 0;
+position:relative;
+text-align:center;
+}
+.profile-picture
+{
+width:100;
+height:100;
+border-radius:100px;
+position:absolute;
+object-fit:cover;
+top:60px;
+left:75px;
+} 
+.section
+{
+background-color:yellowgreen;
+padding:2rem;
+margin:1rem;
+border-radius:20px;
+box-shadow:o o 10px black(0,0,0,0.1);
+}
+.download-button
+{
+background-color:darkgreen;
+color:white;
+padding:0.5rem 1rem;
+text-decoration:none;
+border-radius:20px;
+display:inline-block;
+margin-top:10px;
+}
+.footer
+{
+background-color:darkgreen;
+padding:1rem 0;
+text-align:center;
+height:30px
+color:black;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<img src="C://proj1.jpg" alt="your profile picture" class="profile-picture">
+<h1 style="font-size:36px;font-family:times new roman">Muthukumar Jeyapandi</h1>
+<p style="font-size:26px;font-family:times new roman">Proud To Be an Indian</p>
+</div>
+</header><br>
+<div class="nav">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#resume">Resume</a>
+</div>
+<section id="about">
+<div class="section">
+<h1>About Me</h1>
+<h2>Hallo EveryBody! I'm Muthukumar J and I'm a Employee of Private Company</h1>
+</div>
+</section>
+<section id="education">
+<div class="section">
+<h1>M.S.C</h1>
+<h2>Bharathiyaar University-Coimbatore</h2>
+</div>
+</section>
+<section id="skills">
+<div class="section">
+<h1>Skills</h1>
+<h2><ul>
+<li>C++</li>
+<li>Java</li>
+<li>Python</li>
+<li>PHP</li>
+<li>SQL</li>
+</ul></h2>
+</div>
+</section>
+<section id="projects">
+<div class="section">
+<h1>Projects</h1>
+<h2>
+<ul>
+<li><a href="#">Project1</a></li>
+<li><a href="#">Project2</a></li>
+</ul>
+</div>
+</section>
+<section id="resume">
+<div class="section">
+<h1>Resume</h1>
+<center>
+<h2><a href="C:/Users/ELCOT/Documents/1670219689916_J%20Muthukumar.pdf" class="doenload-button">Download Resume</a></h2>
+</center>
+</div>
+</section>
+<section id="footer">
+<div class="footer">
+<h2>anjanjsm123@gmail.com</h2>
+</div>
+</section>
+<script>
+document.querySelectorAll('a[href^="#"]').
+for Each(anchor=>{anchor.addEventListener(
+'click',function(e){
+e.preventDefault();
+const targetId=this.getAttribute(
+'href').substring(1);
+const targetElement=document.getElementById(targetId);
+if(targetElement){
+window.scrollTo({
+top:targetElement.offsetTop,
+behaviour:'smooth'
+});
+}
+});
+});
+</script>
+</body>
+</html>
